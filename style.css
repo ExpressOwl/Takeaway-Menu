@@ -1,0 +1,23 @@
+/* General styles */
+:root {
+  font-size: 18px;
+  font-family: 'Libre BaskerVille', sans-serif;
+  --text-primary: #d62828ff;
+  --text-secondary: rgb(160, 31, 31);
+
+  --bg-primary: #fcbf49ff;
+  --bg-secondary: #f77f00ff;
+}
+
+body {
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom Scrollbar */
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+

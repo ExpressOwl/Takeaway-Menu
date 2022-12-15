@@ -1,23 +1,66 @@
-/* General styles */
-:root {
-  font-size: 18px;
-  font-family: 'Libre BaskerVille', sans-serif;
-  --text-primary: #d62828ff;
-  --text-secondary: rgb(160, 31, 31);
-
-  --bg-primary: #fcbf49ff;
-  --bg-secondary: #f77f00ff;
-}
-
-body {
-  color: var(--text-primary);
-  background-color: var(--bg-primary);
+/* General Styles */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-/* Custom Scrollbar */
-body::-webkit-scrollbar {
-  width: 0.25rem;
+html {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  scroll-behavior: smooth;
 }
 
+main {
+  height: 100vh;
+  width: 100%;
+  background: #9D0208; /* Dark red */
+  align-items: center;
+}
+/* General Styles */
+
+/* Navigation bar */
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #faa307ff;
+}
+
+nav .container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0.5rem;
+} 
+
+nav .container ul li {
+  display: inline-block;
+}
+
+nav .container ul li a {
+  display: inline-block;
+  padding: 0.5rem 0.5rem;
+  color: black;
+  text-decoration: none;
+}
+/* Navigation bar */
+
+/* Main Section for Homepage */
+.container {
+  margin: 0 auto;
+  width: 90%;
+  height: 100%;
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+/* Main Section for Homepage */
+
+/* Javascript Active Nav Link Indicator */
+a:is(link, :active, :visited).active {
+  color:  #9D0208;
+  background-color: #faa307ff;
+}
+/* Javascript Active Nav Link Indicator */

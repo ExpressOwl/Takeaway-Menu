@@ -15,19 +15,16 @@ Homepage has the general layout from Koya Soho.
 https://www.koya.co.uk/restaurant/soho
 
 Possible Colours: 
-Set 1:
---sunray: #edae49ff;
---brick-red: #d1495bff;
---metallic-seaweed: #00798cff;
---lapis-lazuli: #30638eff;
---indigo-dye: #003d5bff;
-
-Set 2:
---prussian-blue: #003049ff;
---maximum-red: #d62828ff;
---orange: #f77f00ff;
---maximum-yellow-red: #fcbf49ff;
---lemon-meringue: #eae2b7ff;
+--xiketic: #03071eff;
+--dark-sienna: #370617ff;
+--rosewood: #6a040fff;
+--dark-red: #9d0208ff;
+--rosso-corsa: #d00000ff;
+--vermilion: #dc2f02ff;
+--persimmon: #e85d04ff;
+--tangerine: #f48c06ff;
+--orange-web: #faa307ff;
+--selective-yellow: #ffba08ff;
 
 SVG icons: 
 Bowl of Rice (Menu)

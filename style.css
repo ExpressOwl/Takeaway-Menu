@@ -72,9 +72,7 @@ nav {
 }
 
 .info {
-  display: flex;
-  flex-direction: column;
-  justify-content: ;
+  display: inline-block;
   margin-right: 1rem;
   padding: 1rem;
 }
@@ -100,3 +98,18 @@ a:is(link, :active, :visited).active {
   background-color: var(--secondary-yellow);
 }
 /* Javascript Active Nav Link Indicator */
+
+/* Media queries for small screen */
+@media only screen and (max-width: 600px) {
+  .home_container {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .map_media {
+    width: 300px;
+    height: 300px;
+  }
+}
+/* Media queries for small screen */

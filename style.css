@@ -88,8 +88,6 @@ main .info h2 {
 .times {
   max-width: 14rem;
 }
-
-
 /* Homepage container holding information and map */
 
 /* Javascript Active Nav Link Indicator */
@@ -104,7 +102,14 @@ a:is(link, :active, :visited).active {
   .home_container {
     display: flex;
     flex-direction: column;
+  }
 
+  .info {
+    font-size: 0.8rem;
+  }
+
+  .times {
+    display: inline;
   }
 
   .map_media {
@@ -113,3 +118,25 @@ a:is(link, :active, :visited).active {
   }
 }
 /* Media queries for small screen */
+
+/* Media queries for large screens */
+@media only screen and (min-width: 700px) {
+  .home_container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info {
+    font-size: 1.5rem;
+  }
+
+  .times {
+    display: inline;
+  }
+
+  .map_media {
+    width: 600px;
+    height: 600px;
+  }
+}
+/* Media queries for large screens */

@@ -15,7 +15,8 @@
 html {
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
-  background: var(--primary-red); /* Dark red*/
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url(./layered_peaks_haikei.svg)
+  no-repeat center / cover;
 }
 
 main {
@@ -29,7 +30,7 @@ main {
 nav {
   position: sticky;
   top: 0;
-  background-color: var(--secondary-yellow);
+  background: #faa307ff;
 }
 
 .nav_container {
@@ -82,6 +83,7 @@ nav {
 
 .name {
   color: var(--secondary-yellow);
+  font-weight: bold;
 }
 
 main .info h2 {
@@ -90,6 +92,10 @@ main .info h2 {
 
 .times {
   max-width: 14rem;
+}
+
+.map_media {
+  border-radius: 0.5rem;
 }
 /* Homepage container holding information and map */
 

@@ -13,7 +13,7 @@
 }
 
 html {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Courier','Poppins', sans-serif;
   font-size: 18px;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url(./layered_peaks_haikei.svg)
   no-repeat center / cover;
@@ -44,6 +44,11 @@ nav {
 .nav_container ul li {
   display: inline-block;
   transition: color 200ms ease;
+}
+
+.nav_container a {
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .nav_container:hover {
@@ -98,6 +103,103 @@ main .info h2 {
   border-radius: 0.5rem;
 }
 /* Homepage container holding information and map */
+
+/* Dropdown Menu */
+.menu_container {
+  background: #23242a;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+}
+
+.dropdown {
+  min-width: 20rem;
+  position: relative;
+  margin: 2rem;
+}
+
+.dropdown * {
+  box-sizing: border-box;
+}
+
+.select {
+  background: #2a2f3b;
+  color: var(--secondary-yellow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px #2a2f3b solid;
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.select_click {
+  border: 2px #26489a solid;
+  box-shadow: 0 0 0.8em #26489a;
+}
+
+.select:hover {
+  background: #323741;
+}
+
+.dropdown_icon {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #fff;
+  transition: 0.3s;
+  margin-right: 5px;
+}
+
+.dropdown_icon_rotate {
+  transform: rotate(180deg);
+}
+
+.menu {
+  min-width: 20rem;
+  list-style: none;
+  padding: 0.1rem 0.25rem;
+  background: #323741;
+  border: 1px #363a43 solid; 
+  border-radius: 0.3rem;
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+  color: #9fa5b5;
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 0.2s;
+  z-index: 1;
+}
+
+.menu li {
+  padding: 0.3rem 0.1em;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.menu li:hover {
+  background: #2a2d35;
+}
+
+.active { /* added later in javascript*/
+background: #23242a;
+}
+
+.menu_open { /* Open styles, javascript */
+  display: block;
+  opacity: 1;
+}
+
+/* Dropdown Menu */
 
 /* Javascript Active Nav Link Indicator */
 a:is(link, :active, :visited).active {

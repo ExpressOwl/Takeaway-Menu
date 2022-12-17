@@ -7,3 +7,5 @@ navLinks.forEach (link => {
     link.classList.add('active');
   }
 })
+
+// Menu dropdown and highlights

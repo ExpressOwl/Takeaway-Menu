@@ -155,13 +155,6 @@ main .info h2 {
 .menu_item {
   display: flex;
 }
-
-
-
-
-
-
-
 /* Menu items */
 
 
@@ -220,7 +213,7 @@ a:is(link, :active, :visited).active {
   }
 
   .menu {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .menu_group {

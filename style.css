@@ -110,6 +110,13 @@ main .info h2 {
   padding: 1.5em 0.5rem;
 }
 
+.deliver_text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--secondary-yellow);
+}
+
 .menu {
   font-size: 14px;
 }

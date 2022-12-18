@@ -50,7 +50,7 @@ nav {
   font-weight: bold;
 }
 
-.nav_container:hover {
+.nav_container a:hover {
   color: var(--primary-red);
 }
 

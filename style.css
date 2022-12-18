@@ -116,6 +116,7 @@ main .info h2 {
 
 .menu_group_heading {
   margin: 0;
+  margin-top: 1rem;
   padding-bottom: 0.2rem;
   border-bottom: 2px solid var(--secondary-yellow);
   color: var(--secondary-yellow);

@@ -118,6 +118,7 @@ main .info h2 {
   margin: 0;
   padding-bottom: 0.2rem;
   border-bottom: 2px solid var(--secondary-yellow);
+  color: var(--secondary-yellow);
 }
 
 .description {

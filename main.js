@@ -8,4 +8,3 @@ navLinks.forEach (link => {
   }
 })
 
-// Menu dropdown and highlights

@@ -15,8 +15,7 @@
 html {
   font-family: 'Courier','Poppins', sans-serif;
   font-size: 18px;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url(./layered_peaks_haikei.svg)
-  no-repeat center / cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url(./layered_peaks_haikei.svg);
 }
 
 main {
@@ -104,6 +103,60 @@ main .info h2 {
 }
 /* Homepage container holding information and map */
 
+/* Menu items */
+.menu_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5em 0.5rem;
+}
+
+.menu {
+  font-size: 14px;
+}
+
+.menu_group_heading {
+  margin: 0;
+  padding-bottom: 0.2rem;
+  border-bottom: 2px solid var(--secondary-yellow);
+}
+
+.description {
+  color: var(--secondary-yellow);
+  flex-grow: 1;
+  display: flex;
+}
+
+.dish {
+  color: black;
+  font-weight: bold;
+  margin-right: 1.5rem;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.menu_group {
+  display: grid;
+  /* Grid template specifies what columns look like and how they are going to be sized */
+  grid-template-columns: 1fr; /* Single column*/
+  gap: 0.7rem;
+  padding: 0.5rem 0;
+}
+
+.menu_item {
+  display: flex;
+}
+
+
+
+
+
+
+
+/* Menu items */
+
+
 
 /* Javascript Active Nav Link Indicator */
 a:is(link, :active, :visited).active {
@@ -157,6 +210,15 @@ a:is(link, :active, :visited).active {
     width: 700px;
     height: 500px;
   }
+
+  .menu {
+    font-size: 18px;
+  }
+
+  .menu_group {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
 }
 /* Media queries for large screens */
 
@@ -167,4 +229,3 @@ a:is(link, :active, :visited).active {
   }
 }
 /* Media query for weird fold phones */
-

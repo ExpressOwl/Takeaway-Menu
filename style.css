@@ -100,6 +100,7 @@ main .info h2 {
 
 .map_media {
   border-radius: 0.5rem;
+  margin: 0.5rem;
 }
 /* Homepage container holding information and map */
 
@@ -190,7 +191,7 @@ a:is(link, :active, :visited).active {
   }
 
   .map_media {
-    width: 400px;
+    width: 600px;
     height: 340px;
   }
 }
@@ -238,3 +239,12 @@ a:is(link, :active, :visited).active {
   }
 }
 /* Media query for weird fold phones */
+
+/* Media query for weird galaxy phones */
+@media only screen and (max-width: 420px) {
+  .map_media {
+    width: 400px;
+    height: 400px;
+  }
+}
+/* Media query for weird galaxy phones */

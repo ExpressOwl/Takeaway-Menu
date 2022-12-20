@@ -243,7 +243,7 @@ a:is(link, :active, :visited).active {
 /* Media query for weird galaxy phones */
 @media only screen and (max-width: 420px) {
   .map_media {
-    width: 400px;
+    width: 350px;
     height: 400px;
   }
 }
